@@ -9,7 +9,8 @@ char letter;
 for (letter = 'a'; letter <= 'z'; letter++)
 {
 putchar(letter);
-putchr('\n');
+putchar('\n');
 return (0);
+}
 }
 
