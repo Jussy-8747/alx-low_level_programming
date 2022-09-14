@@ -3,7 +3,7 @@
  *_putchar - print _putchar
  *Return: 0
  */
-int _putchar(void)
+int main(void)
 {
 char text[10] = "_putchar";
 int i;
