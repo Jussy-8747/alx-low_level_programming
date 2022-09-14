@@ -3,7 +3,7 @@
  *_putchar - print _putchar
  *Return: 0
  */
-int _putchar()
+int _putchar(void)
 {
 _putchar('_');
 _putchar('p');
@@ -13,6 +13,6 @@ _putchar('c');
 _putchar('h');
 _putchar('a');
 _putchar('r');
-_putchar('\n);
+_putchar('\n');
 return (0);
 }
