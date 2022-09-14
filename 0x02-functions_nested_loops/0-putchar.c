@@ -2,7 +2,7 @@
 /**
  *_putchar - print _putchar
  *Return: 0
- *
+ */
 int _putchar()
 {
 _putchar('_');
