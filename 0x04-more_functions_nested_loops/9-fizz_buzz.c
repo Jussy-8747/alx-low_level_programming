@@ -10,14 +10,14 @@ int i;
 for (i = 1; i <= 100; i++)
 if (i % 3 == 0 && i % 5 == 0)
 {
-_putchar(" fizzBuzz"};
+_putchar(" FizzBuzz"};
 else if (i % 3 == 0)
 {
-_putchar(" fizz");
+_putchar(" Fizz");
 }
 else if (i % 5 == 0)
 {
-_putchar(" buzz");
+_putchar(" Buzz");
 }
 else
 _putchar(" %d", i);
