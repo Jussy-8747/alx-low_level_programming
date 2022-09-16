@@ -1,22 +1,28 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
- *main - print number from 1 to 100
- *Return: 0
+ * main - Prints the numbers from 1-100, but for multiples of three,
+ *        Fizz is printed instead of the number, for multiples of five,
+ *        Buzz, and for multiples of both three and five, FizzBuzz.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-int i;
-for (i = 1; i <= 100; i++)
+int num;
+for (num = 1; num <= 100; num++)
 {
-if (i % 3 == 0 && i % 5 == 0)
-_putcha(" FizzBuzz");
-else if (i % 3 == 0)
-_putchar(" Fizz");
-else if (i % 5 == 0)
-_putchar(" Buzz");
+if ((num % 3) == 0 && (num % 5) == 0)
+printf("FizzBuzz");
+else if ((num % 3) == 0)
+printf("Fizz");
+else if ((num % 5) == 0)
+printf("Buzz");
 else
-_putchar(" %d", i);
+printf("%d", num);
+if (num == 100)
+continue;
+printf(" ");
 }
+printf("\n");
 return (0);
 }
