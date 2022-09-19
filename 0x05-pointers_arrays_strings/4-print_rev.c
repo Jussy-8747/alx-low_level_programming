@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * print_most_numbers - Prints the numbers from 0-9 except for 2 and 4.
+ *print_rev - Prints a string in reverse.
+ *@s: The string to be printed.
  */
-void print_most_numbers(void)
+void print_rev(char *s)
 {
-int num;
-for (num = 0; num <= 9; num++)
-{
-if (num != 2 && num != 4)
-_putchar((num % 10) + '0');
-}
+int len = 0, index;
+while (s[index++])
+len++;
+for (index = len - 1; index >= 0; index--)
+_putchar(s[index]);
 _putchar('\n');
 }
