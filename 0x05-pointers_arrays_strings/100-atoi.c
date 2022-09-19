@@ -1,29 +1,22 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Finds and prints the largest prime
- *      factor of the number 612852475143.
+ *_atoi - Converts a string to an integer.
+ *@s: The string to be converted.
  *
- * Return: Always 0.
+ *Return: The integer value of the converted string.
  */
-int main(void)
+int _atoi(char *s)
 {
-long prime = 612852475143, div;
-while (div < (prime / 2))
-{
-if ((prime % 2) == 0)
-{
-prime /= 2;
-continue;
-}
-for (div = 3; div < (prime / 2); div += 2)
-{
-if ((prime % div) == 0)
-prime /= div;
-}
-}
-
-printf("%ld\n", prime);
-
-return (0);
+int sign = 1;
+unsigned int num = 0;
+do {
+if (*s == '-')
+sign *= -1;
+else if (*s >= '0' && *s <= '9')
+num = (num * 10) + (*s - '0');
+else if (num > 0)
+break;
+} while (*s++);
+return (num *sign);
 }
