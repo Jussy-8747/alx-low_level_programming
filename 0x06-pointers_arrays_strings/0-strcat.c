@@ -1,3 +1,4 @@
+#include<string.h>
 #include "main.h"
 /**
  *_strcat - concatenates tow strings.
